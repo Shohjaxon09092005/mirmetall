@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    <url>
+        <loc>https://x-solar.uz/#home</loc>
+        <video:video>
+            <video:thumbnail_loc>https://x-solar.uz/images/video-thumbnail.jpg</video:thumbnail_loc>
+            <video:title>Quyosh energiyasi haqida</video:title>
+            <video:description>Bu video quyosh panellari qanday ishlashini tushuntiradi.</video:description>
+            <video:content_loc>https://x-solar.uz/videos/solar-energy.mp4</video:content_loc>
+            <video:player_loc allow_embed="yes">https://x-solar.uz/#home</video:player_loc>
+            <video:duration>120</video:duration>
+            <video:publication_date>2024-02-10T12:00:00+00:00</video:publication_date>
+        </video:video>
+    </url>
+</urlset>
