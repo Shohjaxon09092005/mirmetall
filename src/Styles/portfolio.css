@@ -1,0 +1,251 @@
+/* Portfolio Section */
+.portfolio {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    background: linear-gradient(45deg, #000000, #333333);
+    /* Gradient fon */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.portfolio-header {
+    margin-bottom: 2rem;
+    animation: slideIn 1s ease-out;
+}
+
+.portfolio-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #c0c0c0;
+    margin-bottom: 1rem;
+}
+
+
+.portfolio-categories {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.category-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: #c0c0c0;
+    /* Silver */
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.category-button:hover,
+.category-button.active {
+    background-color: #ffd700;
+    /* Gold */
+    color: #000;
+}
+
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Portfolio Gallery */
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 1rem;
+}
+
+.portfolio-title {
+    font-size: 1.5rem;
+    color: #212121;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Portfolio item hover effekti */
+.portfolio-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #ffd700;
+    /* Yashil chegaralar */
+}
+
+/* Hoverda tanlangan itemni aniqlash uchun */
+.portfolio-item.active {
+    border: 3px solid #ffeb3b;
+    /* Sariq chegaralar */
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Hoverda itemga bo'lganda matnning o'zgarishi */
+.portfolio-item:hover .portfolio-title {
+    color: #ffeb3b;
+    /* Hoverda yashil */
+}
+
+/* Video o'lchamlarini sozlash */
+.portfolio-video {
+    width: 100%;
+    /* Video kengligini konteynerning kengligiga moslashtiradi */
+    height: auto;
+    /* Video balandligini o'lchamiga qarab avtomatik hisoblaydi */
+    object-fit: cover;
+    /* Video o'lchamlarini konteynerga moslashtiradi */
+    max-height: 400px;
+    /* Video balandligi maksimal 400px bo'ladi */
+    margin: 0 auto;
+    /* Video markazlashtiriladi */
+    display: block;
+    /* Block elementga aylantirish */
+}
+
+
+.portfolio {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .portfolio-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .portfolio-categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .category-button {
+    padding: 8px 15px;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .category-button.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .portfolio-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .portfolio-image-wrapper {
+    position: relative;
+  }
+  
+  .portfolio-image,
+  .portfolio-video {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .portfolio-info {
+    margin-top: 1rem;
+  }
+  
+  .portfolio-title {
+    color: #333;
+  }
+  
+  .portfolio-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Pagination */
+  .pagination {
+    margin-top: 2rem;
+  }
+  
+  .pagination-button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .pagination-button.active {
+    background: #ff9800; /* Active sahifa sariq */
+    font-weight: bold;
+  }
+  
+  .pagination-button:hover {
+    background: #0056b3;
+  }
+  
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .portfolio-title {
+        font-size: 2rem;
+    }
+
+    .category-button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}

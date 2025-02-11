@@ -1,0 +1,66 @@
+/* About Us Section */
+.about-us {
+  padding: 5rem 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.about-us-content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.about-us-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.about-us-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.about-us-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffd700; /* Gold */
+}
+
+.stat-subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .about-us-title {
+    font-size: 2rem;
+  }
+
+  .about-us-text {
+    font-size: 1rem;
+  }
+
+  .about-us-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .stat-title {
+    font-size: 2rem;
+  }
+}
