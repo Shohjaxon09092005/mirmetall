@@ -2,8 +2,13 @@ import React, { useState, useEffect, useMemo } from "react";
 import "../Styles/portfolio.css";
 import { useLanguage } from "../Languages/LanguageContext";
 import translations from "../Languages/PortfolioLanguage";
+
+// ✅ Swiper importlarini to‘g‘ri qilish
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const Portfolio = () => {
   const { language } = useLanguage();
@@ -78,7 +83,13 @@ const Portfolio = () => {
       <div className="portfolio-gallery">
         {displayedProjects.map((project) => (
           <div key={project.id} className="portfolio-item">
-            <Swiper spaceBetween={10} slidesPerView={1} loop={true} autoplay={{ delay: 5000 }}>
+            <Swiper
+              spaceBetween={10}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{ delay: 5000 }}
+              modules={[Autoplay, Navigation, Pagination]} // ✅ Modullarni to‘g‘ri kiritish
+            >
               <SwiperSlide>
                 <div className="portfolio-image-wrapper">
                   {project?.video ? (
